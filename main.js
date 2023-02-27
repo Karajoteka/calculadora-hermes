@@ -33,7 +33,7 @@ function liquidityToAdd(event) {
   const myVehermesPercentage = myVehermesPercentageInput.value;
   const liquidityToAdd = (tvlPool * myVehermesPercentage) / 100;
 
-  resultLiquidity.innerHTML = 'Tienes que añadir una liquidez de $' + liquidityToAdd;
+  resultLiquidity.innerHTML = 'Tienes que añadir una liquidez de $ ' + liquidityToAdd;
 }
 
 // Function 3 - Calculate current liquidity pool percentage
@@ -56,7 +56,7 @@ function myCurrentLiquidityPercentage(event) {
   resultLiquidityPercentage.innerHTML = 'El porcentaje que representa tu liquidez actual en el pool es % ' + myLiquidityPercentage;
 }
 
-// Function 4 - Calculate new liquidity to add/remove
+// Function 4 - Calculate new liquidity to add
 const myCurrentPoolLiquidityInput = document.querySelector('.my-current-pool-liquidity-input');
 const myPoolLiquidityPercentageInput = document.querySelector('.my-pool-liquidity-percentage-input');
 const myVehermesPercentInput = document.querySelector('.my-vehermes-percent-input');
@@ -74,7 +74,7 @@ function newLiquidity(event) {
   const myVehermesPercent = myVehermesPercentInput.value;
   const newLiquidityToAdd = (myCurrentPoolLiquidity * myVehermesPercent) / myPoolLiquidityPercentage;
 
-  resultNewLiquidityToAdd.innerHTML = 'Tienes que añadir una liquidez de $' + newLiquidityToAdd; 
+  resultNewLiquidityToAdd.innerHTML = 'Tienes que añadir una liquidez de $ ' + newLiquidityToAdd; 
 }
 
 
