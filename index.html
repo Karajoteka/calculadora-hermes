@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./desktop.css" media="(min-width: 930px)">
+  <title>Calculadora de Liquidez en Hermes Protocol</title>
+</head>
+<body>
+
+  <h1>Calculadora de Liquidez en Hermes Protocol</h1>
+
+  <main class="main-container">
+
+    <div class="my-vehermes-container container">
+
+      <p class="info">Calcula el porcentaje que representa tu veHermes</p>
+
+      <p class="link">Consulta el total de veHermes <a href="https://andromeda-explorer.metis.io/token/0xa4C546c8F3ca15aa537D2ac3f62EE808d915B65b/token-transfers">aquí</a></p>
+
+      <form action="">
+
+        <p class="tvl input-description">TVL de veHermes</p>
+        <input type="text" class="tvl-input">
+
+        <p class="my-vehermes-value input-description">Valor de mi veHermes</p>
+        <input type="text" class="my-vehermes-input">
+
+        <button class="calculate-percentage">Calcular</button>
+
+        <div>
+          <p class="my-vehermes-percentage result"></p>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="liquidity-container container">
+
+      <p class="info">Calcula la liquidez a agregar al pool</p>
+
+      <form action="">
+
+        <p class="tvl-pool input-description">TVL del pool</p>
+        <input type="text" class="tvl-pool-input">
+
+        <p class="my-vehermes input-description">Porcentaje de mi veHermes</p>
+        <input type="text" class="my-vehermes-percentage-input">
+
+        <button class="calculate-liquidity">Calcular</button>
+
+        <div>
+          <p class="liquidity-to-add result"></p>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="new-liquidity-container container">
+
+      <p class="info">Calcula el porcentaje que representa la liquidez que tienes en el pool</p>
+
+      <form action="">
+
+        <p class="tvl-pool input-description">TVL del pool</p>
+        <input type="text" class="pool-tvl-input">
+
+        <p class="my-liquidity input-description">Mi liquidez actual en el pool</p>
+        <input type="text" class="my-current-liquidity-input">
+
+        <p class="my-vehermes-percentage input-description">Porcentaje de mi veHermes</p>
+        <input type="text" class=".percentage-my-vehermes">
+
+        <button class="calculate-my-current-liquidity">Calcular</button>
+
+        <div>
+          <p class="my-liquidity-percentage result"></p>
+        </div>
+
+      </form>
+    </div>
+
+      <div class="container">
+
+        <p class="info">Calcula la liquidez que tienes que agregar al pool <span><br>*siempre que tu veHermes represente un tanto por ciento mayor que el tanto por ciento que representa tu liquidez actual dentro del pool</span></p>
+
+        <form action="">
+
+          <p class="my-pool-liquidity input-description">Mi liquidez actual en el pool</p>
+          <input type="text" class="my-current-pool-liquidity-input input-description">
+
+          <p class="my-pool-liquidity-percentage input-description">Porcentaje que representa mi liquidez actual dentro del pool</p>
+          <input type="text" class="my-pool-liquidity-percentage-input">
+
+          <p class="my-global-percentage input-description">Porcentaje de mi veHermes</p>
+          <input type="text" class="my-vehermes-percent-input">
+
+          <button class="calculate-new-liquidity">Calcular</button>
+
+          <div>
+            <p class="my-new-liquidity result"></p>
+          </div>
+
+        </form>
+      </div>
+  
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>
