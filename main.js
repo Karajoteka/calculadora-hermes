@@ -12,6 +12,12 @@ function myVehermesPercentage(event) {
 
   const tvl = tvlInput.value;
   const myVehermes = myVehermesInput.value;
+
+  if (!tvl || !myVehermes) {
+    resultPercentage.innerHTML = 'Por favor, rellena todos los campos';
+    return;
+  }
+
   const myVehermesPercentage = (myVehermes * 100) / tvl;
 
   resultPercentage.innerHTML = 'El porcentaje que representa tu veHermes es % ' + myVehermesPercentage;
@@ -31,6 +37,12 @@ function liquidityToAdd(event) {
 
   const tvlPool = tvlPoolInput.value;
   const myVehermesPercentage = myVehermesPercentageInput.value;
+
+  if (!tvlPool || !myVehermesPercentage) {
+    resultLiquidity.innerHTML = 'Por favor, rellena todos los campos';
+    return;
+  }
+
   const liquidityToAdd = (tvlPool * myVehermesPercentage) / 100;
 
   resultLiquidity.innerHTML = 'Tienes que añadir una liquidez de $ ' + liquidityToAdd;
@@ -51,6 +63,12 @@ function myCurrentLiquidityPercentage(event) {
 
   const poolTvl = poolTvlInput.value;
   const myCurrentLiquidity = myCurrentLiquidityInput.value;
+
+  if (!poolTvl || !myCurrentLiquidity) {
+    resultLiquidityPercentage.innerHTML = 'Por favor, rellena todos los campos';
+    return;
+  }
+  
   const myLiquidityPercentage = (myCurrentLiquidity * 100) / poolTvl;
 
   resultLiquidityPercentage.innerHTML = 'El porcentaje que representa tu liquidez actual en el pool es % ' + myLiquidityPercentage;
