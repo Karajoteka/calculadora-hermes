@@ -42,7 +42,7 @@ h1 {
 }
 
 .info span {
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: rgb(143, 142, 142);
 }
 
@@ -76,5 +76,6 @@ button {
 .result {
   margin-top: 10px;
   font-size: 1.4rem;
+  background-color: ;
 }
 

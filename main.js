@@ -57,25 +57,25 @@ function myCurrentLiquidityPercentage(event) {
 }
 
 // Function 4 - Calculate new liquidity to add
-const myCurrentPoolLiquidityInput = document.querySelector('.my-current-pool-liquidity-input');
-const myPoolLiquidityPercentageInput = document.querySelector('.my-pool-liquidity-percentage-input');
-const myVehermesPercentInput = document.querySelector('.my-vehermes-percent-input');
+// const myCurrentPoolLiquidityInput = document.querySelector('.my-current-pool-liquidity-input');
+// const myPoolLiquidityPercentageInput = document.querySelector('.my-pool-liquidity-percentage-input');
+// const myVehermesPercentInput = document.querySelector('.my-vehermes-percent-input');
 
-const btnNewLiquidity = document.querySelector('.calculate-new-liquidity');
-const resultNewLiquidityToAdd = document.querySelector('.my-new-liquidity');
+// const btnNewLiquidity = document.querySelector('.calculate-new-liquidity');
+// const resultNewLiquidityToAdd = document.querySelector('.my-new-liquidity');
 
-btnNewLiquidity.addEventListener('click', newLiquidity);
+// btnNewLiquidity.addEventListener('click', newLiquidity);
 
-function newLiquidity(event) {
-  event.preventDefault(); 
+// function newLiquidity(event) {
+//   event.preventDefault(); 
 
-  const myCurrentPoolLiquidity = myCurrentPoolLiquidityInput.value;
-  const myPoolLiquidityPercentage = myPoolLiquidityPercentageInput.value;
-  const myVehermesPercent = myVehermesPercentInput.value;
-  const newLiquidityToAdd = (myCurrentPoolLiquidity * myVehermesPercent) / myPoolLiquidityPercentage;
+//   const myCurrentPoolLiquidity = myCurrentPoolLiquidityInput.value;
+//   const myPoolLiquidityPercentage = myPoolLiquidityPercentageInput.value;
+//   const myVehermesPercent = myVehermesPercentInput.value;
+//   const newLiquidityToAdd = (myCurrentPoolLiquidity * myVehermesPercent) / myPoolLiquidityPercentage;
 
-  resultNewLiquidityToAdd.innerHTML = 'Tienes que añadir una liquidez de $ ' + newLiquidityToAdd; 
-}
+//   resultNewLiquidityToAdd.innerHTML = 'Tienes que añadir una liquidez de $ ' + newLiquidityToAdd; 
+// }
 
 
 
